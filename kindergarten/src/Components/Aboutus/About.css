@@ -1,0 +1,55 @@
+
+.about{
+    background: #e9768f;
+    min-height: 75vh;
+    width: 115vw;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+}
+.about .heading{
+    font-size: 4rem;
+    color:black;
+    text-align: centre;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+
+
+}
+.heading span{
+    color: rgb(239, 176, 95);
+    text-transform: uppercase;
+}
+
+.about .row .image{
+    flex: 1 1 15rem;
+}
+
+.about .row .image img{
+    width: 60%;
+    height: 60%;
+}
+
+.about .row .content{
+    flex: 1 1 30rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: rgb(240, 192, 88);
+    line-height: 1.5;
+}
+
+.about .row .content p{
+    font-size: 1.4rem ;
+    color: white;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+

@@ -1,0 +1,138 @@
+.navbar{
+ /* display: flex;
+    align-items: center ;
+    justify-content: space-between;
+     margin: 20px 170px;  */
+     height: 5rem;
+     width: 100vw;
+      max-width: 90rem; 
+     margin: 0 auto;
+     padding: 0 2rem;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     position: sticky;
+     top: 0;
+     z-index: 3;
+     background: white;
+
+}
+
+
+/* position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+display: flex;
+align-items: centre;
+justify-content: space-between;
+padding: 2rem 9%; */
+
+.logo{
+   object-fit: cover;
+   width: 100px;
+   height: 100px;
+   float: left;
+}
+.nav-menu{
+    display:flex ;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 18px;
+    color: #e7b616;
+    margin: 1rem ;
+    cursor: pointer;
+    font-weight: 800;
+
+
+}
+.menu:hover {
+   color:  #e9768f;;
+   padding-bottom: 0.5rem;
+   border-bottom: 5px solid  #e9768f;
+   
+}
+.menu.active{
+  color: #e9768f;
+}
+
+/* .navmenu{
+   position: absolute;
+   top: 4rem;
+   right: 2rem;
+   z-index: 2;
+   display: flex;
+   flex-direction: column;
+   padding: 0.5rem;
+   height: fit-content;
+   padding: 0.5rem;
+   height: fit-content;
+   min-width: 15rem;
+   background: wheat;
+   border-radius: 1rem;
+}
+
+.items{
+   color: black;
+   padding: 0.5rem 3 rem;
+   margin: 0.25rem;
+
+
+} */
+.men{
+   display: none;
+}
+.nav-close{
+   width: 2rem;
+   height: 2rem;
+   display: none;
+}
+@media(max-width:768px){
+
+   .navbar{
+      margin: 20px 50px;
+      width: 1rem;
+      height: 1rem;
+   }
+   .men{
+      display: block;
+      position: fixed;
+      right: 30px;
+      width: 4rem;
+      height: 4rem;
+
+   }
+   .nav-close{
+      display: block;
+      position: relative;
+      top: 30px;
+      left: 290px;
+      width: 30px;
+
+   }
+      .nav-menu{
+          position: fixed; 
+          flex-direction: column;
+          align-items: start;
+          top: 0;
+          gap: 30px;
+          background-color: whitesmoke;
+          width: 350px;
+          height: 100%;
+          z-index: 2;
+          transition:  right 0.5s;   
+          right: -370px;     
+
+      }
+      .navbar li{
+         font-size: 30px;
+         padding-left: 10px;
+         flex-direction: row;
+         gap: 20px;
+
+      }
+  
+
+}
